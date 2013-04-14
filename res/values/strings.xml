@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IansSampleApp</string>
+    <string name="app_id">237180629754096</string>
+    <string name="post_photo">Click Here to Post the photo</string>
+    <string name="success">success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="cancelled">cancelled</string>
+    <string name="permission_not_granted">permission not granted</string>
+    <string name="login">login</string>
+    <string name="instructions">instruction</string>
+    <string name="logout">logout</string>
+    <string name="Fragment1">Fragment</string>
+    <string name="F2">f2</string>
+    <string name="loginfirst">Please log in before post the photo!</string>
+    <string name="photo_name">photo:xxx</string>
+
+</resources>

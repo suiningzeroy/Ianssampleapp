@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item0"
+        android:orderInCategory="100"
+        android:title="@string/post_photo"/>
+    <item android:id="@+id/item1" android:title="@string/Fragment1"></item>
+    <item android:id="@+id/item2" android:title="@string/F2"></item>
+
+</menu>
