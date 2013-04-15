@@ -65,23 +65,6 @@ public class MainActivity extends FragmentActivity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    switch (item.getItemId()){
-
-	    	case R.id.item0:
-	    	//
-	    	break;
-	    	
-	    	case R.id.item1:
-	    	//
-	    	break;
-	    	
-	    	case R.id.item2:
-	    	//
-	    	break;
-	    	
-	    	default:
-	    		return super.onOptionsItemSelected(item);
-	    }
 
 	    return true;
 	}
