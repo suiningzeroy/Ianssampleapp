@@ -25,34 +25,32 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		
 		if (savedInstanceState == null) {
-	        // Add the fragment on initial activity setup
-	        mainFragment = new MainFragment();
-	        getSupportFragmentManager()
-	        .beginTransaction()
-	        .add(android.R.id.content, mainFragment)
-	        .commit();
-	    } else {
-	        // Or set the fragment from restored state info
-	        mainFragment = (MainFragment) getSupportFragmentManager()
-	        .findFragmentById(android.R.id.content);
-	    }
+			// Add the fragment on initial activity setup
+			mainFragment = new MainFragment();
+			getSupportFragmentManager()
+				.beginTransaction()
+				.add(android.R.id.content, mainFragment)
+				.commit();
+		} else {
+			// Or set the fragment from restored state info
+			mainFragment = (MainFragment) getSupportFragmentManager()
+					.findFragmentById(android.R.id.content);
+		}
 		
 
-	      
-	    try {  
-	        PackageInfo info = getPackageManager().getPackageInfo(  
-	                "ian.facebook.ianssampleapp",   
-	                PackageManager.GET_SIGNATURES);  
-	        for (Signature signature : info.signatures) {  
-	            MessageDigest md = MessageDigest.getInstance("SHA");  
-	            md.update(signature.toByteArray());  
-	            Log.i("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));  
-	            }  
-	    } catch (NameNotFoundException e) {  
+		try {  
+			PackageInfo info = getPackageManager().getPackageInfo(  
+					"ian.facebook.ianssampleapp",   
+					PackageManager.GET_SIGNATURES);  
+			for (Signature signature : info.signatures) {  
+				MessageDigest md = MessageDigest.getInstance("SHA");  
+				md.update(signature.toByteArray());  
+				Log.i("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));  
+			}  
+		} catch (NameNotFoundException e) {  
 
-	    } catch (NoSuchAlgorithmException e) {  
-
-	    }  
+		} catch (NoSuchAlgorithmException e) {  
+		}  
 		
 	}
 	
@@ -66,7 +64,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
-	    return true;
+		return true;
 	}
 	 
 }
